@@ -13,6 +13,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Servis nesnesi: tüm iş mantığı buradan yürütülür
+        BankaService servis = new BankaService();
+
         // ---- 1. Banka Personeli Oluşturma ----
         System.out.println("===== BANKA YÖNETİM SİSTEMİ =====\n");
         BankaPersoneli personel = new BankaPersoneli("Derin", "Erdoğan",
@@ -20,9 +23,6 @@ public class Main {
         System.out.println("Personel oluşturuldu:");
         System.out.println(personel);
         System.out.println();
-
-        // Servis nesnesi: tüm iş mantığı buradan yürütülür
-        BankaService servis = new BankaService();
 
         // ---- 2. Müşteri Oluşturma ----
         System.out.println("===== MÜŞTERİ OLUŞTURMA =====");
