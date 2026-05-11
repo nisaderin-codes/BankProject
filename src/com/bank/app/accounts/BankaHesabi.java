@@ -3,7 +3,7 @@ package com.bank.app.accounts;
 import java.util.Random;
 
 // Tüm hesap türlerinin miras aldığı soyut temel sınıf
-public abstract class BankaHesabi {
+public class BankaHesabi {
 
     // Her hesaba özgü rastgele IBAN ve mevcut bakiye
     private String iban;
